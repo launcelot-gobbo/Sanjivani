@@ -1,1 +1,1 @@
-# Aplya Saglanchi Sanjivani Booti
+# Aplya Saglyanchi Sanjivani Booti
