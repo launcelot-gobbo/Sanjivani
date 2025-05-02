@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
+
+header{
+    background: rgb(195, 83, 35);
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    margin: auto;
+}
+nav a{
+    color: rgb(221, 234, 246);
+}
+section{
+    margin: auto;
+    padding: 30px;
+}
+img{
+    width: 200px;
+}
+footer{
+    background:  rgb(195, 83, 35);
+    color: aliceblue;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Directory</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f9f9f9;
+            padding: 20px
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: center;
+            width: 200px;
+            display: inline-block
+        }
+
+        img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Employees</h1>
+    <div id="list"></div>
+    <script>
+        fetch('/api/employees')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('list').innerHTML = data.map(emp => `
+          <div class="card">
+            <img src="${emp.profileImage}" alt="${emp.name}">
+            <h2>${emp.name}</h2>
+            <p>${emp.designation}</p>
+            <p>${emp.department}</p>
+            <p>$${emp.salary}</p>
+          </div>`).join('');
+            });
+    </script>
+</body>
+
+</html>

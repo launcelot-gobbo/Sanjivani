@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Alice",
+      "designation": "Developer",
+      "department": "IT",
+      "salary": 80000,
+      "profileImage": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "name": "Bob",
+      "designation": "Manager",
+      "department": "Sales",
+      "salary": 90000,
+      "profileImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    }
+  ]
+  
