@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PICT - Pune Institute of Computer Technology</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(245, 236, 236);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            background-color: rgb(213, 223, 176);
+            color: red;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .ui-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: green;
+            color: aliceblue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: darkgreen;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div class="container">
+            <div class="header">
+                <h1>PICT - Pune Institute of Computer Technology</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>Welcome to the official mobile site of PICT. Navigate to learn more.</p>
+                <a href="#about" class="button">About Us</a>
+                <a href="#courses" class="button">Courses</a>
+                <a href="#departments" class="button">Departments</a>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2025 PICT</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div class="container">
+            <div class="header">
+                <h1>About Us</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>PICT is one of the premier engineering institutes in Pune, established in 1999. Known for its quality
+                    education and state-of-the-art infrastructure.</p>
+                    <a href="#home" class="button">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Page -->
+    <div data-role="page" id="courses">
+        <div class="container">
+            <div class="header">
+                <h1>Courses Offered</h1>
+            </div>
+            <div class="ui-content">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Undergraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>B.E. in Computer Engineering</li>
+                        <li>B.E. in Electronics Engineering</li>
+                        <li>B.E. in Information Technology</li>
+                        <li>B.E. in Mechanical Engineering</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Postgraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>M.E. in Computer Engineering</li>
+                        <li>M.E. in Electronics Engineering</li>
+                        <li>M.E. in Structural Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#home" class="button">Back</a>
+        </div>
+    </div>
+
+    <!-- Departments Page -->
+    <div data-role="page" id="departments">
+        <div class="container">
+            <div class="header">
+                <h1>Departments</h1>
+            </div>
+            <div class="ui-content ">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>All Departments</h3>
+                    <ul data-role="listview">
+                        <li>Computer Engineering</li>
+                        <li>Electronics Engineering</li>
+                        <li>Information Technology</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Civil Engineering</li>
+                        <li>Electrical Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#home" class="button">Back</a>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div class="container">
+            <div class="header">
+                <h1>Contact Information</h1>
+            </div>
+            <div class="ui-content">
+                <p>Address: PICT, Pune, Maharashtra, India</p>
+                <p>Email: info@pict.edu</p>
+                <p>Phone: +91 1234 567890</p>
+            </div>
+            <a href="#home" class="button">Back</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
