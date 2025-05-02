@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Filter Section on the left -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Filter by Category</h5>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">All</a></li>
+            <li class="list-group-item"><a href="#">Ceramic</a></li>
+            <li class="list-group-item"><a href="#">Glass</a></li>
+            <li class="list-group-item"><a href="#">Travel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Listing Section -->
+    <div class="col-md-9">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Mugs</h2>
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Sort by Price
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Low to High</a></li>
+            <li><a class="dropdown-item" href="#">High to Low</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZvTS_rYupWZot4vPbSDLNwUgHRIUdW9qlQ&s" class="card-img-top" alt="Ceramic Mug 11oz">
+            <div class="card-body">
+              <h5 class="card-title">Ceramic Mug 11oz</h5>
+              <p class="card-text">From $4.40</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1616241673111-508b4662c707?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bXVnfGVufDB8fDB8fHww" class="card-img-top" alt="Accent Coffee Mug">
+            <div class="card-body">
+              <h5 class="card-title">Accent Coffee Mug</h5>
+              <p class="card-text">From $5.52</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSANUW2aU9ctW5vY1hWIVNkJg2n8K1ZIjvWeg&s" class="card-img-top" alt="Glass Mug">
+            <div class="card-body">
+              <h5 class="card-title">Glass Mug</h5>
+              <p class="card-text">From $6.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFs1GybhaLW3x7b4j2JalwIZyjNkx0jRAYw&s" class="card-img-top" alt="Travel Mug">
+            <div class="card-body">
+              <h5 class="card-title">Travel Mug</h5>
+              <p class="card-text">From $8.99</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dtwVO8jKxF4CPEfHl87iJbyGG13Vfuag8A&s" class="card-img-top" alt="Custom Mug">
+            <div class="card-body">
+              <h5 class="card-title">Custom Mug</h5>
+              <p class="card-text">From $10.00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

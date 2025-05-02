@@ -34,18 +34,21 @@
     <div id="list"></div>
     <script>
         fetch('/api/employees')
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById('list').innerHTML = data.map(emp => `
-          <div class="card">
-            <img src="${emp.profileImage}" alt="${emp.name}">
-            <h2>${emp.name}</h2>
-            <p>${emp.designation}</p>
-            <p>${emp.department}</p>
-            <p>$${emp.salary}</p>
-          </div>`).join('');
+          .then(res => res.json())
+          .then(data => {
+            const container = document.getElementById('list');
+            data.forEach(emp => {
+              container.innerHTML += `
+                <div class="card">
+                  <img src="${emp.profileImage}" alt="${emp.name}">
+                  <h2>${emp.name}</h2>
+                  <p>${emp.designation}</p>
+                  <p>${emp.department}</p>
+                  <p>$${emp.salary}</p>
+                </div>`;
             });
-    </script>
+          });
+      </script>
 </body>
 
 </html>
