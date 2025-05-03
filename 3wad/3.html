@@ -8,12 +8,10 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: white;
         }
 
-        .header,
-        .footer {
+        header,
+        footer {
             background: rgb(2, 59, 78);
             color: rgb(230, 221, 221);
             text-align: center;
@@ -22,57 +20,50 @@
 
         .container {
             max-width: 900px;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
             background: white;
-        }
-
-        h1 {
-            color: rgb(194, 194, 218);
-            text-align: center;
+            box-shadow: 0 0 10px black;
+            border-radius: 8px;
         }
 
         h2 {
-            color: black;
+            color: rgb(2, 59, 78);
         }
 
         table {
             width: 100%;
-            box-shadow: 0 0 10px black;
             border-collapse: collapse;
             margin-top: 10px;
         }
-
-        th {
-            background: white;
-        }
-
-        .section {
-            margin-top: 30px;
-        }
-
+        
         th,
         td {
             border: 1px solid rgba(1, 19, 19);
             padding: 10px;
-            text-align: left;
+            text-align: center;
         }
 
-        image {
-            width: 80px;
+        img {
+            height: 100px;
+            width: 100px;
             border-radius: 6px;
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <h1>ABC Delights - Restaurant Menu</h1>
-    </div>
+    </header>
+
     <div class="container">
         <div class="section">
             <h2>Welcome</h2>
             <p>At ABC Delights, enjoy top-quality dishes crafted with passion by our chefs.</p>
+        </div>
+
+        <div class="section">
             <h2>Top Dishes</h2>
             <ul>
                 <li>Panner Tikka</li>
@@ -80,8 +71,7 @@
                 <li>Margherita Pizza</li>
                 <li>Spring Rolls</li>
             </ul>
-        </div>
-        <div class="section">
+
             <h2>Cuisines</h2>
             <ul>
                 <li>Indian</li>
@@ -91,35 +81,38 @@
                 <li>Englishmen</li>
             </ul>
         </div>
+
         <div class="section">
             <h2>Menu</h2>
             <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Dish</th>
+                        <th>Description</th>
+                        <th>Price (INR ₹)</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Image</th>
-                    <th>Dish</th>
-                    <th>Description</th>
-                    <th>Price (INR ₹)</th>
-                </tr>
-                <tr>
-                    <td><img src="https://via.placeholder.com/80?text=Paneer"></td>
+                    <td><img src="./paneer-tikka-masala-recipe-239876-451735.webp"></td>
                     <td>Panner Tikka</td>
                     <td>Grilled panner with spices.</td>
                     <td>250.Rs</td>
                 </tr>
                 <tr>
-                    <td><img src="https://via.placeholder.com/80?text=Biryani"></td>
+                    <td><img src="./indian-biryani.webp"></td>
                     <td>Biryani</td>
                     <td>Basmati rice with veggies/meat.</td>
                     <td>300.Rs</td>
                 </tr>
                 <tr>
-                    <td><img src="https://via.placeholder.com/80?text=Pizza"></td>
+                    <td><img src="./pizza-with-ham-and-cheese.webp"></td>
                     <td>Margherita Pizza</td>
                     <td>Cheese and basil pizza.</td>
                     <td>350.Rs</td>
                 </tr>
                 <tr>
-                    <td><img src="https://via.placeholder.com/80?text=Rolls"></td>
+                    <td><img src="./360_F_974518702_MvTQPwRhlp0lFiYWmNUg2AudNYvzxWjB.webp"></td>
                     <td>Spring Rolls</td>
                     <td>Veggie rolls with dip.</td>
                     <td>180.Rs</td>
@@ -127,9 +120,10 @@
             </table>
         </div>
     </div>
-    <div class="footer">
+
+    <footer>
         <p>&copy; 2025 ABC Delights</p>
-    </div>
+    </footer>
 </body>
 
 </html>

@@ -5,15 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PICT - Pune Institute of Computer Technology</title>
+<!--
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
     <style>
         body {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             background-color: beige;
             color: black;
+            
         }
 
         .container {
@@ -22,26 +29,20 @@
             background-color: rgb(245, 236, 236);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            margin-bottom: 10px;
+            padding-bottom: 15px;
+            margin: 10px auto ;
         }
 
         .header {
             background-color: rgb(213, 223, 176);
             color: red;
-            padding: 10px;
+            padding: 5px;
             border-radius: 10px 10px 0 0;
-        }
-
-        .ui-content {
-            padding: 20px;
-            text-align: center;
         }
 
         .button {
             display: inline-block;
             background-color: green;
-            color: aliceblue;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
@@ -49,7 +50,7 @@
             margin-top: 10px;
         }
 
-        .btn:hover {
+        .button:hover {
             background-color: darkgreen;
         }
 
@@ -61,24 +62,13 @@
             margin-top: 20px;
         }
 
-        h1 {
-            font-size: 2em;
+        a[data-role="button"] {
+            width: auto;
+            display: inline-block;
         }
 
-        h3 {
-            font-size: 1.2em;
-        }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 1.1em;
-            text-align: center;
-        }
-
-        ul li {
-            margin: 8px 0;
-        }
+        
     </style>
 </head>
 
@@ -90,13 +80,18 @@
             <div class="header">
                 <h1>PICT - Pune Institute of Computer Technology</h1>
             </div>
-            <div role="main" class="ui-content">
-                <p>Welcome to the official mobile site of PICT. Navigate to learn more.</p>
+
+            <div data-role="navbar" class="ui-content">
                 <a href="#about" class="button">About Us</a>
                 <a href="#courses" class="button">Courses</a>
                 <a href="#departments" class="button">Departments</a>
                 <a href="#contact" class="button">Contact</a>
             </div>
+
+            <div class="ui-content">
+                <p>INSERT RANDOM DATA</p>
+            </div>
+
             <div class="footer">
                 <p>&copy; 2025 PICT</p>
             </div>
@@ -109,11 +104,11 @@
             <div class="header">
                 <h1>About Us</h1>
             </div>
-            <div role="main" class="ui-content">
+            <div class="ui-content">
                 <p>PICT is one of the premier engineering institutes in Pune, established in 1999. Known for its quality
                     education and state-of-the-art infrastructure.</p>
-                    <a href="#home" class="button">Back</a>
             </div>
+            <a href="#home" data-role="button">Back</a>
         </div>
     </div>
 
@@ -142,7 +137,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="#home" class="button">Back</a>
+            <a href="#home" data-role="button">Back</a>
         </div>
     </div>
 
@@ -164,8 +159,7 @@
                         <li>Electrical Engineering</li>
                     </ul>
                 </div>
-            </div>
-            <a href="#home" class="button">Back</a>
+            <a href="#home" data-role="button">Back</a>
         </div>
     </div>
 
@@ -180,9 +174,11 @@
                 <p>Email: info@pict.edu</p>
                 <p>Phone: +91 1234 567890</p>
             </div>
-            <a href="#home" class="button">Back</a>
+            <a href="#home" data-role="button">Back</a>
         </div>
     </div>
+
+   
 
 </body>
 

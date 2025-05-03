@@ -19,9 +19,6 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: auto;
-            background: white;
-            color: black;
             border: solid black;
         }
 
@@ -29,12 +26,11 @@
         td {
             border: solid black;
             padding: 20px;
-            text-align: left;
-            border-bottom: 1px solid white;
         }
 
         img {
-            width: 100px;
+            width: 200px;
+            height: 200px;
             border-radius: 8px;
         }
 
@@ -46,8 +42,13 @@
         button {
             padding: 8px 12px;
             margin: 0 5px;
-            font-size: 16px;
-            cursor: pointer;
+            
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -66,6 +67,7 @@
     </table>
     <div id="paginationControls">
         <button onclick="changePage(-1)"><=Prev</button>
+        <span id="PageInfo"></span>
         <button onclick="changePage(1)">Next=></button>
     </div>
     <script>
@@ -94,7 +96,7 @@
                 <td>${p.description}</td>
             </tr>`)
             .join("");
-            document.getElementById("PageInfo").textContent=`page ${page} of${Math.ceil(products.length/rows)}`;
+            document.getElementById("PageInfo").textContent=`Page ${page} of ${Math.ceil(products.length/rows)}`;
         }
         function changePage(step){
             const total=Math.ceil(products.length/rows);
