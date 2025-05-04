@@ -7,11 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body>
+    <!-- Display -->
     <div class="container mt-5" style="max-width: 900px;">
         <h3 class="text-center mb-4">Event Registration</h3>
+        <!-- Form -->
         <form class="needs-validation" novalidate>
 
+            <!-- Name -->            
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="home" placeholder="Name" required data-bs-toggle="tooltip"
                     title="Enter your full name">
@@ -19,6 +22,7 @@
                 <div class="invalid-feedback">Enter Your Name</div>
             </div>
 
+            <!-- Email -->
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="email" placeholder="Email" required
                     data-bs-toggle="tooltip" title="Enter a vaild email address">
@@ -26,6 +30,7 @@
                 <div class="invalid-feedback">Enter a valid email</div>
             </div>
 
+            <!-- Phone -->
             <div class="form-floating mb-3">
                 <input type="tel" class="form-control" id="phone" placeholder="Phone" pattern="[0-9]{10}" required
                     data-bs-toggle="tooltip" title="Enter a 10-digit Phone Number">
@@ -33,6 +38,7 @@
                 <div class="invalid-feedback">Enter 10-digit number</div>
             </div>
 
+            <!-- Course -->
             <div class="form-floating mb-3">
                 <select class="form-select" id="event" required data-bs-toggle="tooltip" title="Choose..">
                     <option value="" disabled selected>Choose..</option>
@@ -41,9 +47,12 @@
                     <option>UI/UX</option>
                 </select>
             </div>
+
+            <!-- Submit -->
             <button class="btn btn-primary w-100" type="submit">Submit</button>
         </form>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));

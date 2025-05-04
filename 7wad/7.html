@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FaceBook</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            background: rgb(237, 217, 217);
-        }
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+    <style>
         .header {
             background-color: rgb(71, 71, 226);
             padding: 10px;
@@ -22,7 +21,6 @@
         }
 
         .content-area {
-            background: white;
             margin-top: 30px;
             padding: 20px;
             border-radius: 8px;
@@ -33,9 +31,11 @@
             color: white;
         }
     </style>
+
 </head>
 
 <body>
+    <!-- Header Section -->
     <div class="container-fluid header">
         <div class="row align-items-center">
             <div class="col-md-4">
@@ -54,15 +54,21 @@
 
     <div class="container">
         <div class="row content-area">
+            <!-- Left Column -->
             <div class="col-md-6">
                 <h4>Facebook is useless without friends. <br>Make More Friends.</h4>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8UP3lEn40Ws_ZDbLKL2DrqWMSY7BBsKVjJg&s"
                     class="img-fluid" alt="friends illustration">
             </div>
+
+            <!-- Right Column -->
             <div class="col-md-6">
                 <h2>Create an account</h2>
                 <p>It's free and always will be.</p>
-                <form>
+
+                <!--FORM-->
+                <form class="col-md-8">
+                    <!--FIRSTNAME-LASTNAME-->
                     <div class="row">
                         <div class="col">
                             <input type="text" class="form-control" placeholder="FirstName">
@@ -72,23 +78,26 @@
                         </div>
                     </div>
                     <br>
-                    <input type="email" class="form-control mb-2" placeholder="Email">
-                    <input type="email" class="form-control mb-2" placeholder="Re-enter email">
-                    <input type="password" class="form-control mb-2" placeholder="Password">
-                    <input type="date" class="form-control mb-2" placeholder="dd/mm/yyyy">
+                    <!--EMAIL,PASS,DOB-->
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Re-enter email">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+
+                    <!--GENDER-->
                     <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                          <label class="form-check-label" for="male">Male</label>
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <input class="form-check-input" type="radio" name="gender">
                         <label class="form-check-label" for="female">Female</label>
-                  </div>
-                  <br><br>
-                  <p>By clicking create an account, you agree to our Terms.</p>
-                  <button type="submit" class="btn btn">Signup</button>
-                </form>
-                <br>
+                    </div>
+                    
+                </form><br>
+                <p>By clicking create an account, you agree to our Terms.</p>
+                <button type="submit" class="btn">Signup</button>
+
                 <a href="#">Create a page for you.</a>
             </div>
         </div>

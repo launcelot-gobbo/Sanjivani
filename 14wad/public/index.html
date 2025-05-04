@@ -15,7 +15,7 @@
             const list=document.getElementById('userList');
             users.forEach(user =>{
                 const li=document.createElement('li');
-                li.textContent=`${user.name}(${user.email})`;
+                li.textContent=`${user.name} \t (${user.email})`;
                 list.appendChild(li);
             });
         });

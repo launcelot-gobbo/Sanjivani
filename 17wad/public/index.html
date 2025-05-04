@@ -31,13 +31,14 @@
 
 <body>
     <h1>Employees</h1>
-    <div id="list"></div>
+    <div id="employeeList"></div>
+
     <script>
         fetch('/api/employees')
           .then(res => res.json())
-          .then(data => {
-            const container = document.getElementById('list');
-            data.forEach(emp => {
+          .then(employees => {
+            const container = document.getElementById('employeeList');
+            employees.forEach(emp => {
               container.innerHTML += `
                 <div class="card">
                   <img src="${emp.profileImage}" alt="${emp.name}">

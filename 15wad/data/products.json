@@ -1,23 +1,22 @@
 [
-    {
-      "name": "Laptop",
-      "price": 1200,
-      "image": "https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhcHRvcCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
-    },
-    {
-      "name": "Headphones",
-      "price": 150,
-      "image": "https://plus.unsplash.com/premium_photo-1701065893190-46f44657fbee?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbiUyMHdpdGglMjBoZWFkcGhvbmVzfGVufDB8fDB8fHww"
-    },
-    {
-       "name":"printer",
-       "price":200,
-       "image":"https://images.unsplash.com/photo-1706895040634-62055892cbbb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJpbnRlcnxlbnwwfHwwfHx8MA%3D%3D"
-    },
-    {
-      "name":"PC",
-      "price":200,
-      "image":"https://images.unsplash.com/photo-1626218174358-7769486c4b79?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nJTIwcGN8ZW58MHx8MHx8fDA%3D"
-    }
+  {
+    "name": "Laptop",
+    "price": 1200,
+    "image": "https://cdn.prod.website-files.com/5ee0a01b09389eebf4c09b45/667c516fc330063073f8fed9_1-After-Mobile.webp"
+  },
+  {
+    "name": "Headphones",
+    "price": 150,
+    "image": "https://cdn.prod.website-files.com/5ee0a01b09389eebf4c09b45/667c516fc330063073f8fed9_1-After-Mobile.webp"
+  },
+  {
+    "name": "Printer",
+    "price": 200,
+    "image": "https://cdn.prod.website-files.com/5ee0a01b09389eebf4c09b45/667c516fc330063073f8fed9_1-After-Mobile.webp"
+  },
+  {
+    "name": "PC",
+    "price": 200,
+    "image": "https://cdn.prod.website-files.com/5ee0a01b09389eebf4c09b45/667c516fc330063073f8fed9_1-After-Mobile.webp"
+  }
 ]
-  
