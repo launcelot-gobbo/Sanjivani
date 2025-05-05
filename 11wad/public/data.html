@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Data</title>
+</head>
+
+<body>
+    <h2>Your Data</h2>
+    <ul id="list"></ul>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        const u = JSON.parse(localStorage.getItem('currentUser'));
+        if (u) {
+            list.innerHTML = `<li>${u.name}, ${u.email}, ${u.mobile}, ${u.dob}, ${u.city}, ${u.address}</li>`;
+        } else {
+            list.textContent = 'No user logged in';
+        }
+
+        function logout() {
+            localStorage.removeItem('currentUser');
+            location.href = 'login.html';
+        }
+    </script>
+</body>
+
+</html>
