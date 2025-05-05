@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>To-Do App</title>
 </head>
+
 <body>
   <h2>To-Do List</h2>
   <input type="text" id="taskInput" placeholder="Enter task">
@@ -11,57 +13,54 @@
   <ul id="taskList"></ul>
 
   <script>
+    const taskList = document.getElementById('taskList');
+    const taskInput = document.getElementById('taskInput');
+
     function fetchTasks() {
       fetch('/tasks')
         .then(res => res.json())
         .then(data => {
-          const list = document.getElementById('taskList');
-          list.innerHTML = '';
-          data.forEach(task => {
-            const li = document.createElement('li');
-            li.innerHTML = `
+          taskList.innerHTML = data.map(task => `
+            <li>
               ${task.name}
               <button onclick="editTask(${task.id})">Edit</button>
               <button onclick="deleteTask(${task.id})">Delete</button>
-            `;
-            list.appendChild(li);
-          });
+            </li>
+          `).join('');
         });
     }
 
     function addTask() {
-      const input = document.getElementById('taskInput');
-      const name = input.value.trim();
+      const name = taskInput.value.trim();
       if (!name) return alert('Task cannot be empty');
       fetch('/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name })
       }).then(() => {
-        input.value = '';
+        taskInput.value = '';
         fetchTasks();
       });
     }
 
     function editTask(id) {
-      const newName = prompt('Enter new task name:');
-      if (newName && newName.trim()) {
+      const name = prompt('Enter new task name:')?.trim();
+      if (name)
         fetch(`/tasks/${id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name: newName.trim() })
+          body: JSON.stringify({ name })
         }).then(fetchTasks);
-      }
     }
 
     function deleteTask(id) {
-      if (confirm('Delete this task?')) {
-        fetch(`/tasks/${id}`, { method: 'DELETE' })
-          .then(fetchTasks);
-      }
+      if (confirm('Delete this task?'))
+        fetch(`/tasks/${id}`, { method: 'DELETE' }).then(fetchTasks);
     }
 
     fetchTasks();
   </script>
+
 </body>
+
 </html>
